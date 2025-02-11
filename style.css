@@ -26,12 +26,12 @@ html, body {
 
 /* Header */
 
-.header .headertext {
+.header .headerimg {
     color: #F9FAF8;
-    font-weight: 700;
-    font-size: 24px;
     padding: 0;
     margin: 0;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .header {
@@ -66,6 +66,12 @@ html, body {
     justify-content: space-between;
 }
 
+.subheader .subheaderinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
 .subheader .subheadertext {
     font-size: 48px;
     font-weight: 900;
@@ -78,18 +84,23 @@ html, body {
     margin-bottom: 6px;
 }
 
-.subheader button {
+.subheader .button {
     background-color: rgb(39, 140, 255);
     color: white;
+    max-width: 70px;
     padding: 5px 20px;
     border-radius: 6px;
     border: none;
     font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 
 .subheader img {
-    width: 300px;
-    height: 150px;
+    width: 600px;
+    height: 300px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -97,7 +108,7 @@ html, body {
 
 .firstcc {
     flex-grow: 1;
-    display: flex; /* Ensures internal content aligns properly */
+    display: flex; 
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -113,20 +124,56 @@ html, body {
 }
 
 .firstcc .content {
-    max-width: 200px;
+    max-width: 300px;
 }
 
-.firstcc .content .box {
+.firstcc .content #box {
     width: 120px;
     height: 120px;
     border-radius: 6px;
-    outline: 3px solid rgb(39, 140, 255);
     flex-shrink: 0;
+}
+
+.firstcc .content #blackbox {
+    width: 250px;
+    height: 80px;
+    border-radius: 14px;
+    flex-shrink: 0;
+}
+
+/* .firstcc .content .box1 {
+    outline: 3px solid rgb(39, 140, 255);
+} */
+
+.firstcc .content .box2 {
+    outline: 3px solid rgb(255, 39, 39);
+}
+
+.firstcc .content .box3 {
+    outline: 3px solid rgb(39, 255, 75);
+}
+
+.firstcc .content .box4 {
+    outline: 3px solid rgb(26, 13, 13);
 }
 
 .firstcc .content p {
     text-align: center;
     max-width: 120px;
+}
+
+.firstcc .content .mar {
+    margin-top: 15px;
+}
+
+.firstcc .content #goddamn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header #FBI {
+    font-weight: 700;
 }
 
 /* Second content container */
@@ -163,7 +210,7 @@ html, body {
 /*Third content container*/
 
 .thirdcc {
-    flex-grow: 1;
+    flex-grow: 3;
     display: flex; /* Ensures internal content aligns properly */
     justify-content: center;
     align-items: center;
@@ -184,14 +231,18 @@ html, body {
     font-weight: 900;
 }
 
-.thirdcc button {
-    width: 80px;
-    height: 30px;
+.thirdcc .button {
+    padding: 10px 20px;
     border: none;
     background-color: rgb(39, 140, 255);
     color: white;
     outline: 1px solid white;
     border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+
 }
 
 /* Footer */

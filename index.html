@@ -7,63 +7,89 @@
     <title>Landing Page</title>
 </head>
 <body>
+    
+    <audio id="click-sound">
+        <source src="audio/KnockS.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function playClickSound() {
+            document.getElementById("click-sound").play();
+        }
+    </script>
+
+
     <div class="top">
         <div class="header">
-            <p class="headertext">Header logo</p>
+            <a href="http://sendamessage.to/">
+            <img src="images/message.gif" alt="You have a message!" class="headerimg">
+        </a>
             <ul>
-                <li><a href="#">header link one</a></li>
-                <li><a href="#">header link two</a></li>
-                <li><a href="#">header link three</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#" onclick="playClickSound()" id="FBI">Don't push</a></li>
+                <li><a href="#Signing up">Signing up</a></li>
             </ul>
         </div>
 
         <div class="subheader">
-            <div class="subheaderinfo">
-                 <p class="subheadertext">This website is awesome</p>
+            <div class="subheaderinfo" id="Products">
+                 <p class="subheadertext">This website is not awful</p>
             <p class="subheadersubtext">
-                This website has some subtext that goes here under the main title.
-                It's a smaller font and the color is lower constrast. 
+                Just push this blue button stepbro, and make it grey.
             </p>
-            <button>Sign up</button>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button">Sign up</a>
             </div>
-
             <img src="images/RD9xG1G.jpeg" alt="Denzell Curry type of shit">
         </div>
     </div>
 
 
     <div class="allcontent">
-    <p class="firstcc_headertext">Some random info.</p>
+    <p class="firstcc_headertext">Products.</p>
     
     <div class="firstcc">
 
-        <div class="content">
-        <div class="box"></div>
-        <p>this is some subtext under an illustraion or image</p>
-        </div>
+        <!-- <div class="content">
+        <div class="box1" id="box"></div>
+        <p>Blue Line by United Nations</p>
+        </div> -->
         
         <div class="content">
-        <div class="box"></div>
-        <p>this is some subtext under an illustraion or image</p>
+        <div class="box2" id="box"></div>
+        <p>Red Line by Takeshi Koike</p>
+        </div>
+
+        <div class="content" id="goddamntext">
+        <div class="box4" id="blackbox">
+        <iframe 
+            style="border-radius:12px" 
+            src="https://open.spotify.com/embed/track/6D1Pr14PtFHoj6gBEoOfQP?utm_source=generator" 
+            width="100%" 
+            height="100" 
+            frameBorder="0"
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+            </iframe>
+        </div>
+        <div id="goddamn" class="mar">God Damn line by GUNNA</div>
+        <div id="goddamn">Very lound sound!!!</div>
         </div>
 
         <div class="content">
-        <div class="box"></div>
-        <p>this is some subtext under an illustraion or image</p>
+        <div class="box3" id="box"></div>
+        <p>Green Line by Anand Mimani</p>
         </div>
 
-        <div class="content">
-        <div class="box"></div>
-        <p>this is some subtext under an illustraion or image</p>
-        </div>
+        
 
     </div>
 
 
     <div class="secondcc">
         <div class="content">
-            <div class="text">If you feel pain, you are alive. Congrats. </div>
-            <div class="author">-Ya-ya, Life is good </div>
+            <div class="text">If you feel pain, you are alive. Congrats👍 </div>
+            <div class="author">-Life, good enough to be bad</div>
         </div>
         
     </div>
@@ -71,16 +97,16 @@
     <div class="thirdcc">
         <div class="content">
             <div class="subcontent">
-                <div class="text">Call to action! It's time!</div>
-                <div class="subtext"> Sigh up for our product by clicking button right over there!</div>
+                <div class="text">Smashing blue buttons, now free !!!</div>
+                <div class="subtext"> Feel free to change your life while clicking on it.</div>
             </div>
-            <button>Sign up</button>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button" id="Signing up">Sign up</a>
     </div>
     </div>
   </div>
 
   <div class="footer">
-    <div>Copyright © The Odin Project 2021</div>
+    <div>Copyright © The Odin Project 2025</div>
   </div>
 
 </div>
