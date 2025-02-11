@@ -52,6 +52,10 @@ html, body {
     color: #E5E7EB;
 }
 
+.header #FBI {
+    font-weight: 700;
+}
+
 /*Subheader*/
 
 .subheader p {
@@ -172,7 +176,7 @@ html, body {
     align-items: center;
 }
 
-.header #FBI {
+.firstcc .vls {
     font-weight: 700;
 }
 
